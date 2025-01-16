@@ -1,0 +1,12 @@
+[project]
+name = "bops-audio"
+version = "0.1.0"
+description = "Controls an X32 for MAGFest BroadcastOps"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "x32 @ https://github.com/bitbyt3r/python-x32.git"
+]
+
+[project.scripts]
+bops_audio = "bops_audio:__main__"
