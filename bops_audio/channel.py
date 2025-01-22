@@ -8,7 +8,7 @@ class ChannelStrip():
         self.vhub_input = vhub_input
         self.audio_channel = audio_channel
         self.name = f"{vhub_input}.{audio_channel}"
-        self.savefile = pathlib.Path("channels" / self.vhub_input / self.audio_channel)
+        self.savefile = pathlib.Path("channels" / str(self.vhub_input) / str(self.audio_channel))
         if not self.savefile.parent.exists():
             self.savefile.parent.mkdir(parents=True)
         self.settings = {
